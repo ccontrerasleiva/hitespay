@@ -26,6 +26,12 @@ Finalmente, la clave pública debes transformarla a formato DER con el siguiente
 
 ## Uso
 
+### Instalación
+
+Se recomienda instalar mediante composer, para resolver dependencias
+
+     composer requiere ccontrerasleiva/hitespay
+
 ### Para crear una instancia de Hitespay, se debe invocar de la siguiente manera:
 
     $hitesPay = new HitesPay($cc, $cl, $pk, $ru, [$env]);
