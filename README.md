@@ -1,7 +1,7 @@
 # HitesPay
 
 ## Compatibilidad
-El plugin esta desarrollado con las siguientes dependencias:
+El componente esta desarrollado con las siguientes dependencias:
 
 * PHP ^7.0
 * GuzzleHttp ^7.0
