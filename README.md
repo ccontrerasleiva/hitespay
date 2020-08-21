@@ -41,22 +41,22 @@ De no haber problema, retornara un objeto de pago de Hites.
 
 ### Para iniciar un pago
 
-  $pago = $hitesPay->initPayment($monto);
+     $pago = $hitesPay->initPayment($monto);
 
 Donde:
-  $monto = monto de la transacción;
+     $monto = monto de la transacción;
  
 De ejecutarse correctamente, retornará un arreglo con la llave "status" con valor "ok", y la llave "response" con un arreglo con los valores de token y paymentUrl.
 
-*token = Corresponde al valor usado para revisar si el pago se realizó correctamente en Hites
-paymentUrl = Es la URL de Hites donde se realizará el pago.
+     * token = Corresponde al valor usado para revisar si el pago se realizó correctamente en Hites
+     * paymentUrl = Es la URL de Hites donde se realizará el pago.
 
 ### Validar un pago
 
     $validaPago = $hitesPay->checkPayment($token);
 
 Donde:
-  $token = Token capturado al inicio del proceso de pago.
+     $token = Token capturado al inicio del proceso de pago.
 
 De haber ejecutado correctamente el pago Hites, se retornara un array con la llave "status" con valor "ok", y la llave "response" conteniendo un array con la información del pago:
   
