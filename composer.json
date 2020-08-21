@@ -1,11 +1,11 @@
 {
-    "name": "cristian/hitespay",
+    "name": "ccontrerasleiva/hitespay",
     "description": "Librería base para integración con Hitespay",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Cristian Contreras Leiva",
+            "name": "ccontrerasleiva Contreras Leiva",
             "email": "ccontrerasl@gmail.com"
         }
     ],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4":{
-            "cristian\\Hitespay\\":"src/"
+            "ccontrerasleiva\\Hitespay\\":"src/"
         }
     }
 }

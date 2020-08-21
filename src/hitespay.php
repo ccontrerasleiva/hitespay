@@ -1,6 +1,6 @@
 <?php
 
-namespace cristian\Hitespay;
+namespace ccontrerasleiva\Hitespay;
 
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Exception\RequestException;
