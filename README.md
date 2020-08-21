@@ -31,11 +31,12 @@ Finalmente, la clave pública debes transformarla a formato DER con el siguiente
     $hitesPay = new HitesPay($cc, $cl, $pk, $ru, [$env]);
 
 Donde:
-  $cc = Codigo de Comercio entregado por Hites
-  $cl = Código de local, por lo general es 1,
-  $pk = Llave privada entregada a Hites en formato PEM, esta llave es la que firma el retorno de hites con los datos de la transacción.
-  $ru = Url de retorno, usada por Hites para retornar a tu página y así cerrar la transacción.
-  $env = Indica en que ambiente trabajaran las transacciones. las opciones son "testing" para ambiente de pruebas, o "prod" para ambiente productivo.
+
+  * $cc = Codigo de Comercio entregado por Hites
+  * $cl = Código de local, por lo general es 1,
+  * $pk = Llave privada entregada a Hites en formato PEM, esta llave es la que firma el retorno de hites con los datos de la transacción.
+  * $ru = Url de retorno, usada por Hites para retornar a tu página y así cerrar la transacción.
+  * $env = Indica en que ambiente trabajaran las transacciones. las opciones son "testing" para ambiente de pruebas, o "prod" para ambiente productivo.
 
 De no haber problema, retornara un objeto de pago de Hites.
 
@@ -44,18 +45,20 @@ De no haber problema, retornara un objeto de pago de Hites.
      $pago = $hitesPay->initPayment($monto);
 
 Donde:
+
      $monto = monto de la transacción;
  
 De ejecutarse correctamente, retornará un arreglo con la llave "status" con valor "ok", y la llave "response" con un arreglo con los valores de token y paymentUrl.
 
-     * token = Corresponde al valor usado para revisar si el pago se realizó correctamente en Hites
-     * paymentUrl = Es la URL de Hites donde se realizará el pago.
+   * token = Corresponde al valor usado para revisar si el pago se realizó correctamente en Hites
+   * paymentUrl = Es la URL de Hites donde se realizará el pago.
 
 ### Validar un pago
 
     $validaPago = $hitesPay->checkPayment($token);
 
 Donde:
+     
      $token = Token capturado al inicio del proceso de pago.
 
 De haber ejecutado correctamente el pago Hites, se retornara un array con la llave "status" con valor "ok", y la llave "response" conteniendo un array con la información del pago:
