@@ -32,11 +32,11 @@ Finalmente, la clave pública debes transformarla a formato DER con el siguiente
 
 Donde:
 
-  * $cc = Codigo de Comercio entregado por Hites
-  * $cl = Código de local, por lo general es 1,
-  * $pk = Llave privada entregada a Hites en formato PEM, esta llave es la que firma el retorno de hites con los datos de la transacción.
-  * $ru = Url de retorno, usada por Hites para retornar a tu página y así cerrar la transacción.
-  * $env = Indica en que ambiente trabajaran las transacciones. las opciones son "testing" para ambiente de pruebas, o "prod" para ambiente productivo.
+     $cc = Codigo de Comercio entregado por Hites
+     $cl = Código de local, por lo general es 1,
+     $pk = Llave privada entregada a Hites en formato PEM, esta llave es la que firma el retorno de hites con los datos de la transacción.
+     $ru = Url de retorno, usada por Hites para retornar a tu página y así cerrar la transacción.
+     $env = Indica en que ambiente trabajaran las transacciones. las opciones son "testing" para ambiente de pruebas, o "prod" para ambiente productivo.
 
 De no haber problema, retornara un objeto de pago de Hites.
 
