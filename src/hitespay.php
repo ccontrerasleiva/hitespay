@@ -100,7 +100,7 @@ class Hitespay {
         return $this->clientHttp;
     }
 
-    public function setClientHttp($clientHttp)
+    public function setClientHttp()
     {
         $this->clientHttp = new \GuzzleHttp\Client();
     }
