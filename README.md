@@ -4,7 +4,7 @@
 El componente esta desarrollado con las siguientes dependencias:
 
 * PHP ^7.0
-* GuzzleHttp ^7.0
+* GuzzleHttp ^6.3.3
 
 ## Algunos alcances técnicos
 
