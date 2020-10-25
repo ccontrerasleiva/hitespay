@@ -30,7 +30,7 @@ Finalmente, la clave pública debes transformarla a formato DER con el siguiente
 
 Se recomienda instalar mediante composer, para resolver dependencias
 
-     composer requiere ccontrerasleiva/hitespay
+     composer require ccontrerasleiva/hitespay
 
 ### Para crear una instancia de Hitespay, se debe invocar de la siguiente manera:
 
