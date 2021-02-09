@@ -163,7 +163,7 @@ class Hitespay {
                 }
             }
         }
-        catch(Throwable $e){
+        catch(\Throwable $e){
             $ret['response'] = $e;
         }
         return $ret;
@@ -204,7 +204,7 @@ class Hitespay {
                 
             }
         }
-        catch(Throwable $e){
+        catch(\Throwable $e){
             $ret['response'] = $e;
         }
         return $ret;
