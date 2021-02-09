@@ -176,7 +176,7 @@ class Hitespay {
         ];
 
         try{
-            $r = $client->request('POST', $this->getConfirmTrxUrl(), [
+            $r = $this->getClientHttp()->request('POST', $this->getConfirmTrxUrl(), [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token
                 ],
